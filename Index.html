@@ -6,7 +6,55 @@
     <title>Document</title>
 </head>
 <body>
-    EX1.: Add H1 title with the name of the shop
     <h1>Euronics </h1>
+    <!--EX2.: Add a TABLE with the top 5 products of the shop-->
+    <table style="width:100%">
+        <tr>
+          <th>Model</th>
+          <th>Images</th>
+          <th>Price</th> 
+          <th>Year</th>
+        </tr>
+        <tr style="text-align: center;">
+          <td><a href="https://www.amazon.com/Apple-iPhone-XS-Max-256GB/dp/B07VSW3FHZ/ref=sr_1_1?dchild=1&keywords=iphone+xs+max&qid=1612796850&sr=8-1">Iphone Xsmax</a></td>
+          <td> <img src="https://alexmak.net/wp-content/uploads/2018/11/Apple-iPhone-Xs-back-camera-09122018-854x1024.jpg" alt="Iphone" width="50" height="60"></td>
+          <td>400$</td>
+          <td>2020</td>
+        </tr>
+        <tr style="text-align: center;">
+          <td><a href="https://www.amazon.com/Samsung-Galaxy-Factory-Unlocked-Phone/dp/B07N4M412B/ref=sr_1_1?crid=15IK7QNTMA4RN&dchild=1&keywords=samsung+s10%2B&qid=1612798435&sprefix=s10+sama%2Caps%2C255&sr=8-1">Samsung S10</a></td>
+          <td><img src="https://i1.foxtrot.com.ua/product/MediumImages/6462900_0.jpg" alt="Samsung" width="60" height="55"></td>
+          <td>400$</td>
+          <td>2021</td>
+        </tr>
+        <tr style="text-align: center;">
+          <td><a href="https://www.amazon.com/Google-Pixel-4a-Unlocked-Smartphone/dp/B08CFSZLQ4/ref=sr_1_2?dchild=1&keywords=google+phone&qid=1612798532&sr=8-2">GT12</a></td>
+          <td><img src="https://cdn.pocket-lint.com/r/s/970x/assets/images/152147-phones-news-google-pixel-4a-to-be-announced-during-junes-android-beta-launch-show-image3-yezpbiyewu-jpg.webp" alt="Iphone" width="50" height="60"></td>
+          <td>223$</td>
+          <td>2020</td>
+        </tr>
+      </table>
+      <div id="page-wrap">
+
+        <h2>Customer  Service</h2>
+        
+        <p id="name-area"></p>
+        
+        <div id="chat-wrap"><div id="chat-area"></div></div>
+        
+        <form id="send-message-area">
+            <p>Your message: </p>
+            <textarea id="sendie" maxlength = '100'></textarea>
+        </form>
+    
+    </div>
+    <input type="button" value="Send Messege" onclick="msg()">
+
+      <div style="position: absolute; bottom: 20px; left: 45%;">
+        <footer>
+            <p>Contacts: +39 327 679 26 88</p>
+            <p><Address>Rome 00133, Italy</Address></p>
+        </footer>
+      </div>
 </body>
 </html>
