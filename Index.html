@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+  <body style="background-color:rgba(43, 130, 180, 0.377);"></body>
     <h1>Euronics </h1>
     <!--EX2.: Add a TABLE with the top 5 products of the shop-->
     <table style="width:100%">
@@ -41,20 +43,21 @@
         <p id="name-area"></p>
         
         <div id="chat-wrap"><div id="chat-area"></div></div>
+        <script>
+          function changedHeader1 (){
+            let changedHeader1 = document.querySelector('h1')
+            console.log(changedHeader1)
+            changedHeader1.innerText = "Murads' Branch"
+            changedHeader1.style.color = "blue"
+          }
+        </script>
         
         <form id="send-message-area">
             <p>Your message: </p>
             <textarea id="sendie" maxlength = '100'></textarea>
+            <p>
+              <button type="button"  onclick="alert('Your messege sent!')">Send</button>
+            </p>
+          
         </form>
     
-    </div>
-    <input type="button" value="Send Messege" onclick="msg()">
-
-      <div style="position: absolute; bottom: 20px; left: 45%;">
-        <footer>
-            <p>Contacts: +39 327 679 26 88</p>
-            <p><Address>Rome 00133, Italy</Address></p>
-        </footer>
-      </div>
-</body>
-</html>
